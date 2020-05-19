@@ -1,6 +1,6 @@
 # SQL_Basics
 
-#Queries
+# Queries
 
 Q. Return employee recoed with max salary ? (Employee (employee_id, first_name, last_anme, gender, position, dept_id, salary), Dept(dept_id, dept_name))
 
@@ -24,7 +24,7 @@ Q. Return highest salary employee name, dept name for each dept.
 A. SELECT e.first_name, e.last_name, e.salary, d.dept_name FROM Employee e INNER JOIN Dept d ON (e.dept_id = d.dept_id) WHERE salary in (SELECT Max(salary) FROM Employee GROUP BY dept_id)
 
 
-#Questions
+# Questions
 
 Q. What is the difference between DELETE and TRUNCATE ?
 
